@@ -1,19 +1,23 @@
+
 import React from 'react';
 import { createContext } from 'react';
 import { doctors } from '../assets/assets';
+
+// eslint-disable-next-line react-refresh/only-export-components
 export const AppContext = createContext();
 
-const AppContextProvider = (props)=>{
+const AppContextProvider = (props) => {
+
+    const currencySymbol = '.000đ';
 
 
-
-
-    const value ={
-        doctors
+    const value = {
+        doctors,
+        currencySymbol
     }
 
-    return(
-        <AppContext.Provider value={ value}>
+    return (
+        <AppContext.Provider value={value}>
             {props.children}
         </AppContext.Provider>
     )

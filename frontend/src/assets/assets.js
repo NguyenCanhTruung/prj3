@@ -20,11 +20,11 @@ import header_img3 from './header_img3.png'
 import header_img4 from './header_img4.png'
 import group_profile2 from './group_profile2.png'
 import logo2 from './logo.png'
-import doc1 from './doc1.png'
-import doc2 from './doc2.png'
-import doc3 from './doc3.png'
-import doc4 from './doc4.png'
-import doc5 from './doc5.png'
+import bacsi1 from './bacsi1.png'
+import bacsi2 from './bacsi2.png'
+import bacsi3 from './bacsi3.png'
+import bacsi4 from './bacsi4.png'
+import bacsi5 from './bacsi5.png'
 import doc6 from './doc6.png'
 import doc7 from './doc7.png'
 import doc8 from './doc8.png'
@@ -65,7 +65,8 @@ export const assets = {
     header_img2,
     header_img3,
     header_img4,
-    group_profile2,
+    group_profile2
+    
 }
 
 export const specialityData = [
@@ -99,12 +100,12 @@ export const doctors = [
     {
         _id: 'doc1',
         name: 'Bs. Hoàng Hà Sơn',
-        image: doc1,
+        image: bacsi1,
         speciality: 'Bác sĩ đa khoa',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 500,
         address: {
             line1: '17th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -113,12 +114,12 @@ export const doctors = [
     {
         _id: 'doc2',
         name: 'Bs. Hoàng Thị Tuyết Mai',
-        image: doc2,
+        image: bacsi2,
         speciality: 'bác sĩ phụ khoa',
         degree: 'MBBS',
         experience: '3 Years',
-        about: 'Bác sĩ có cam kết mạnh mẽ trong việc cung cấp dịch vụ chăm sóc y tế toàn diện, tập trung vào y học dự phòng, chẩn đoán sớm và các chiến lược điều trị hiệu quả. Bác sĩ có cam kết mạnh mẽ trong việc cung cấp dịch vụ chăm sóc y tế toàn diện, tập trung vào y học dự phòng, chẩn đoán sớm và các chiến lược điều trị hiệu quả.',
-        fees: 60,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 600,
         address: {
             line1: '27th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -127,12 +128,12 @@ export const doctors = [
     {
         _id: 'doc3',
         name: 'Bs. Nguyễn Cảnh Trung',
-        image: doc3,
+        image: bacsi3,
         speciality: 'Bác sĩ da liễu',
         degree: 'MBBS',
         experience: '1 Years',
-        about: 'Bác sĩ có cam kết mạnh mẽ trong việc cung cấp dịch vụ chăm sóc y tế toàn diện, tập trung vào y học dự phòng, chẩn đoán sớm và các chiến lược điều trị hiệu quả. Bác sĩ có cam kết mạnh mẽ trong việc cung cấp dịch vụ chăm sóc y tế toàn diện, tập trung vào y học dự phòng, chẩn đoán sớm và các chiến lược điều trị hiệu quả.',
-        fees: 30,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 300,
         address: {
             line1: '37th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -141,12 +142,12 @@ export const doctors = [
     {
         _id: 'doc4',
         name: 'Bs. Lý Hoài Nam',
-        image: doc4,
+        image: bacsi4,
         speciality: 'Bác sĩ nhi khoa',
         degree: 'MBBS',
         experience: '2 Years',
-        about: 'Bác sĩ có cam kết mạnh mẽ trong việc cung cấp dịch vụ chăm sóc y tế toàn diện, tập trung vào y học dự phòng, chẩn đoán sớm và các chiến lược điều trị hiệu quả. Bác sĩ có cam kết mạnh mẽ trong việc cung cấp dịch vụ chăm sóc y tế toàn diện, tập trung vào y học dự phòng, chẩn đoán sớm và các chiến lược điều trị hiệu quả.',
-        fees: 40,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 400,
         address: {
             line1: '47th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -155,12 +156,12 @@ export const doctors = [
     {
         _id: 'doc5',
         name: 'Bs. Nguyễn Thị Bạch Dương',
-        image: doc5,
+        image: bacsi5,
         speciality: 'Nhà thần kinh học',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Bác sĩ có cam kết mạnh mẽ trong việc cung cấp dịch vụ chăm sóc y tế toàn diện, tập trung vào y học dự phòng, chẩn đoán sớm và các chiến lược điều trị hiệu quả. Bác sĩ có cam kết mạnh mẽ trong việc cung cấp dịch vụ chăm sóc y tế toàn diện, tập trung vào y học dự phòng, chẩn đoán sớm và các chiến lược điều trị hiệu quả.',
-        fees: 50,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 500,
         address: {
             line1: '57th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -173,8 +174,8 @@ export const doctors = [
         speciality: 'Nhà thần kinh học',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 500,
         address: {
             line1: '57th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -187,8 +188,8 @@ export const doctors = [
         speciality: 'Bác sĩ đa khoa',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 500,
         address: {
             line1: '17th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -201,8 +202,8 @@ export const doctors = [
         speciality: 'bác sĩ phụ khoa',
         degree: 'MBBS',
         experience: '3 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 60,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 600,
         address: {
             line1: '27th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -215,8 +216,8 @@ export const doctors = [
         speciality: 'Bác sĩ da liễu',
         degree: 'MBBS',
         experience: '1 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 300,
         address: {
             line1: '37th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -229,8 +230,8 @@ export const doctors = [
         speciality: 'Bác sĩ nhi khoa',
         degree: 'MBBS',
         experience: '2 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 40,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 400,
         address: {
             line1: '47th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -243,8 +244,8 @@ export const doctors = [
         speciality: 'Nhà thần kinh học',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 500,
         address: {
             line1: '57th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -257,8 +258,8 @@ export const doctors = [
         speciality: 'Nhà thần kinh học',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 500,
         address: {
             line1: '57th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -271,8 +272,8 @@ export const doctors = [
         speciality: 'Bác sĩ đa khoa',
         degree: 'MBBS',
         experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 500,
         address: {
             line1: '17th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -285,8 +286,8 @@ export const doctors = [
         speciality: 'bác sĩ phụ khoa',
         degree: 'MBBS',
         experience: '3 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 60,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 600,
         address: {
             line1: '27th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
@@ -299,8 +300,8 @@ export const doctors = [
         speciality: 'Bác sĩ da liễu',
         degree: 'MBBS',
         experience: '1 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
+        fees: 300,
         address: {
             line1: '37th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
