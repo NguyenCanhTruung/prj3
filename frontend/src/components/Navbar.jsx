@@ -14,19 +14,19 @@ const Navbar = () => {
       <img onClick={()=> navigate('/')} className='w-40 cursor-pointer' src={assets.logo2} alt="" />
       <ul className='hidden md:flex items-start gap-5 font-medium'>
         <NavLink to='/'>
-            <li className='py-1'>HOME</li>
+            <li className='py-1'>TRANG CHỦ</li>
             <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLink>
         <NavLink to='/doctors'>
-            <li className='py-1'>ALL DOCTORS</li>
+            <li className='py-1'>BÁC SĨ</li>
             <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLink>
         <NavLink to='about'>
-            <li className='py-1'>ABOUT</li>
+            <li className='py-1'>GIỚI THIỆU</li>
             <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLink>
         <NavLink to='contact'>
-            <li className='py-1'>CONTACT</li>
+            <li className='py-1'>LIÊN HỆ</li>
             <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLink>
       </ul>
@@ -38,9 +38,9 @@ const Navbar = () => {
             <img className='w-2.5 ' src={assets.dropdown_icon} alt="" />
             <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
               <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
-                <p onClick={()=>navigate('my-profile')} className='hover:text-black cursor-pointer'>My Profile</p>
-                <p onClick={()=>navigate('my-appointments')} className='hover:text-black cursor-pointer'>My Appointments</p>
-                <p onClick={()=>setToken(false)} className='hover:text-black cursor-pointer'>Logout</p>
+                <p onClick={()=>navigate('my-profile')} className='hover:text-black cursor-pointer'>Hồ sơ cá nhân</p>
+                <p onClick={()=>navigate('my-appointments')} className='hover:text-black cursor-pointer'>Lịch hẹn cá nhân</p>
+                <p onClick={()=>setToken(false)} className='hover:text-black cursor-pointer'>Đăng xuất</p>
               </div>
             </div>
           </div>

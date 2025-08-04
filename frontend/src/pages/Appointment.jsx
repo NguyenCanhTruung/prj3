@@ -107,8 +107,8 @@ const Appointment = () => {
       
       {/* -------------------Booking slots----------------------- */}
       <div className='sm:ml-72 sm:pl-4 font-medium text-gray-700'>
-        <p>Booking SLots</p>
-        <div className='flex gap-3 items-center w-full overflow-x-scroll mt-4'>
+        <p className='pt-2'>Đặt lịch</p>
+        <div className='flex gap-3 items-center w-full overflow-x-scroll mt-2'>
           {
             docSlots.length && docSlots.map((item,index)=>(
               <div onClick={()=> setSlotIndex(index)} className={`text-center py-6 min-w-16 rounded-full cursor-pointer ${slotIndex === index ? 'bg-primary text-white' : 'border border-x-gray-200'}`} key={index}>
@@ -125,7 +125,7 @@ const Appointment = () => {
             </p>
           ))}
         </div>
-        <button className='bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6'>Đặt lịch hẹn</button>
+        <button className='bg-primary text-white text-base font-light px-14 py-3 rounded-full my-6'>Đặt lịch hẹn</button>
       </div>
 
           {/* ------Lissting Related doctors------- */}

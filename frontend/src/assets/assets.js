@@ -17,7 +17,6 @@ import stripe_logo from './stripe_logo.png'
 import razorpay_logo from './razorpay_logo.png'
 import header_img2 from './header_img2.png'
 import header_img3 from './header_img3.png'
-import header_img4 from './header_img4.png'
 import group_profile2 from './group_profile2.png'
 import logo2 from './logo.png'
 import bacsi1 from './bacsi1.png'
@@ -25,16 +24,16 @@ import bacsi2 from './bacsi2.png'
 import bacsi3 from './bacsi3.png'
 import bacsi4 from './bacsi4.png'
 import bacsi5 from './bacsi5.png'
-import doc6 from './doc6.png'
-import doc7 from './doc7.png'
-import doc8 from './doc8.png'
-import doc9 from './doc9.png'
-import doc10 from './doc10.png'
-import doc11 from './doc11.png'
-import doc12 from './doc12.png'
-import doc13 from './doc13.png'
-import doc14 from './doc14.png'
-import doc15 from './doc15.png'
+import bacsi6 from './bacsi6.png'
+import bacsi7 from './bacsi7.png'
+import bacsi8 from './bacsi8.png'
+import bacsi9 from './bacsi9.png'
+import bacsi10 from './bacsi10.png'
+import bacsi11 from './bacsi11.png'
+import bacsi12 from './bacsi12.png'
+import bacsi13 from './bacsi13.png'
+import bacsi14 from './bacsi14.png'
+import bacsi15 from './bacsi15.png'
 import Dermatologist from './Dermatologist.svg'
 import Gastroenterologist from './Gastroenterologist.svg'
 import General_physician from './General_physician.svg'
@@ -64,7 +63,6 @@ export const assets = {
     logo2,
     header_img2,
     header_img3,
-    header_img4,
     group_profile2
     
 }
@@ -170,7 +168,7 @@ export const doctors = [
     {
         _id: 'doc6',
         name: 'Bs. Nguyễn Thanh Hải',
-        image: doc6,
+        image: bacsi6,
         speciality: 'Nhà thần kinh học',
         degree: 'MBBS',
         experience: '4 Years',
@@ -184,7 +182,7 @@ export const doctors = [
     {
         _id: 'doc7',
         name: 'Bs. Hà Kim Minh',
-        image: doc7,
+        image: bacsi7,
         speciality: 'Bác sĩ đa khoa',
         degree: 'MBBS',
         experience: '4 Years',
@@ -198,7 +196,7 @@ export const doctors = [
     {
         _id: 'doc8',
         name: 'Bs. Đào Thành Mạnh',
-        image: doc8,
+        image: bacsi8,
         speciality: 'bác sĩ phụ khoa',
         degree: 'MBBS',
         experience: '3 Years',
@@ -212,7 +210,7 @@ export const doctors = [
     {
         _id: 'doc9',
         name: 'Bs. Phạm Thị Lan Hương',
-        image: doc9,
+        image: bacsi9,
         speciality: 'Bác sĩ da liễu',
         degree: 'MBBS',
         experience: '1 Years',
@@ -226,7 +224,7 @@ export const doctors = [
     {
         _id: 'doc10',
         name: 'Bs. Nguyễn Thành Vinh',
-        image: doc10,
+        image: bacsi10,
         speciality: 'Bác sĩ nhi khoa',
         degree: 'MBBS',
         experience: '2 Years',
@@ -240,7 +238,7 @@ export const doctors = [
     {
         _id: 'doc11',
         name: 'Bs. Hoàng Ngọc Anh',
-        image: doc11,
+        image: bacsi11,
         speciality: 'Nhà thần kinh học',
         degree: 'MBBS',
         experience: '4 Years',
@@ -254,7 +252,7 @@ export const doctors = [
     {
         _id: 'doc12',
         name: 'Bs. Nguyễn Công Phương',
-        image: doc12,
+        image: bacsi12,
         speciality: 'Nhà thần kinh học',
         degree: 'MBBS',
         experience: '4 Years',
@@ -268,7 +266,7 @@ export const doctors = [
     {
         _id: 'doc13',
         name: 'Bs. Lê Hà Giang',
-        image: doc13,
+        image: bacsi13,
         speciality: 'Bác sĩ đa khoa',
         degree: 'MBBS',
         experience: '4 Years',
@@ -282,7 +280,7 @@ export const doctors = [
     {
         _id: 'doc14',
         name: 'Bs. Hoàng Hải Đăng',
-        image: doc14,
+        image: bacsi14,
         speciality: 'bác sĩ phụ khoa',
         degree: 'MBBS',
         experience: '3 Years',
@@ -296,7 +294,7 @@ export const doctors = [
     {
         _id: 'doc15',
         name: 'Bs. Nguyễn Hoài Anh',
-        image: doc15,
+        image: bacsi15,
         speciality: 'Bác sĩ da liễu',
         degree: 'MBBS',
         experience: '1 Years',

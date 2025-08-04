@@ -14,18 +14,18 @@ const Footer = () => {
 
         {/* ----------------center--------------- */}
         <div>
-            <p className='text-xl font-medium mb-5'>COMPANY</p>
+            <p className='text-xl font-medium mb-5'>CÔNG TY</p>
             <ul className='flex flex-col gap-2 text-gray-600'>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li>Privacy policy</li>
+                <li>Trang chủ</li>
+                <li>Về chúng tôi</li>
+                <li>Liên hệ</li>
+                <li>Thông tin pháp lý</li>
             </ul>
         </div>
 
         {/* ----------------right--------------- */}
         <div>
-            <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
+            <p className='text-xl font-medium mb-5'>THÔNG TIN LIÊN HỆ</p>
             <ul className='flex flex-col gap-2 text-gray-600'>
                 <li>+84 862-317-600</li>
                 <li>nguyentrung29042004@gmail.com</li>
