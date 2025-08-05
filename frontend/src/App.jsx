@@ -12,7 +12,7 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 const App = () => {
   return (
-    <div className='mx-4 sm:mx-[10%]'>
+    <div className='mx-4 sm:mx-[6%]'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
