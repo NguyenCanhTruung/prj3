@@ -8,7 +8,7 @@ const About = () => {
         <p>VỀ <span className='text-gray-700 font-medium'>CHÚNG TÔI</span></p>
       </div>
       <div className='my-10 flex flex-col md:flex-row gap-12'>
-        <img className='w-full md:max-w-[360px]' src={assets.about_image} alt="" />
+        <img className='w-full md:max-w-[360px] rounded' src={assets.about_image} alt="" />
         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-sm text-gray-600'>
           <p className='indent-8'> Chào mừng bạn đến với chúng tôi, đối tác đáng tin cậy giúp bạn quản lý nhu cầu chăm sóc sức khỏe một cách thuận tiện và hiệu quả. Tại đây, chúng tôi thấu hiểu những thách thức mà mọi người gặp phải khi đặt lịch hẹn khám bệnh và quản lý hồ sơ sức khỏe.</p>
           <p className='indent-8'> Chúng tôi cam kết mang đến sự xuất sắc trong công nghệ chăm sóc sức khỏe. Chúng tôi không ngừng nỗ lực cải tiến nền tảng, tích hợp những tiến bộ mới nhất để nâng cao trải nghiệm người dùng và cung cấp dịch vụ vượt trội. Dù bạn đang đặt lịch hẹn khám đầu tiên hay quản lý việc chăm sóc sức khỏe liên tục, Chúng tôi luôn sẵn sàng hỗ trợ bạn trong từng bước.</p>
