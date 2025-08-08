@@ -7,17 +7,17 @@ const About = () => {
       <div className='text-center text-2xl pt-10 text-gray-500'>
         <p>VỀ <span className='text-gray-700 font-medium'>CHÚNG TÔI</span></p>
       </div>
-      <div className='my-10 flex flex-col md:flex-row gap-12'>
+      <div className='my-10 flex flex-col md:flex-row gap-12 items-center justify-center'>
         <img className='w-full md:max-w-[360px] rounded' src={assets.about_image} alt="" />
         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-sm text-gray-600'>
-          <p className='indent-8'> Chào mừng bạn đến với chúng tôi, đối tác đáng tin cậy giúp bạn quản lý nhu cầu chăm sóc sức khỏe một cách thuận tiện và hiệu quả. Tại đây, chúng tôi thấu hiểu những thách thức mà mọi người gặp phải khi đặt lịch hẹn khám bệnh và quản lý hồ sơ sức khỏe.</p>
-          <p className='indent-8'> Chúng tôi cam kết mang đến sự xuất sắc trong công nghệ chăm sóc sức khỏe. Chúng tôi không ngừng nỗ lực cải tiến nền tảng, tích hợp những tiến bộ mới nhất để nâng cao trải nghiệm người dùng và cung cấp dịch vụ vượt trội. Dù bạn đang đặt lịch hẹn khám đầu tiên hay quản lý việc chăm sóc sức khỏe liên tục, Chúng tôi luôn sẵn sàng hỗ trợ bạn trong từng bước.</p>
-          <b className='text-gray-800 indent-8'>Tầm nhìn của chúng tôi</b>
-          <p className='indent-8'> Chúng tôi tạo ra trải nghiệm chăm sóc sức khỏe liền mạch cho mọi người dùng. Chúng tôi mong muốn thu hẹp khoảng cách giữa bệnh nhân và nhà cung cấp dịch vụ chăm sóc sức khỏe, giúp bạn dễ dàng tiếp cận dịch vụ chăm sóc cần thiết, bất cứ khi nào bạn cần.</p>
+          <p className='indent-4'> Chào mừng bạn đến với chúng tôi – người bạn đồng hành tin cậy trong việc quản lý nhu cầu chăm sóc sức khỏe một cách dễ dàng và hiệu quả. Chúng tôi thấu hiểu những khó khăn mà bạn có thể gặp phải khi đặt lịch khám bệnh hay theo dõi hồ sơ sức khỏe cá nhân. Vì vậy, chúng tôi mang đến giải pháp thuận tiện, giúp bạn tiết kiệm thời gian và chủ động hơn trong việc chăm sóc sức khỏe cho bản thân và gia đình.</p>
+          <p className='indent-4'> Chúng tôi cam kết mang đến sự xuất sắc trong công nghệ chăm sóc sức khỏe. Chúng tôi không ngừng nỗ lực cải tiến nền tảng, tích hợp những tiến bộ mới nhất để nâng cao trải nghiệm người dùng và cung cấp dịch vụ vượt trội. Dù bạn đang đặt lịch hẹn khám đầu tiên hay quản lý việc chăm sóc sức khỏe liên tục, Chúng tôi luôn sẵn sàng hỗ trợ bạn trong từng bước.</p>
+          <b className='text-gray-800 indent-4'>Tầm nhìn của chúng tôi</b>
+          <p className='indent-4'> Chúng tôi hướng đến việc xây dựng một hệ sinh thái chăm sóc sức khỏe toàn diện và liền mạch. Bằng cách kết nối hiệu quả giữa người bệnh và các nhà cung cấp dịch vụ y tế, chúng tôi giúp quá trình tiếp cận và sử dụng dịch vụ y tế trở nên dễ dàng, nhanh chóng và đáng tin cậy.</p>
         </div>
       </div>
 
-      <div className='text-xl my-4'>
+      <div className='indent-0 md:indent-32 text-xl my-4'>
         <p>VÌ SAO <span className='text-gray-700 font-semibold'>CHỌN CHÚNG TÔI</span> </p>
       </div>
 

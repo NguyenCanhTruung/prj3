@@ -19,21 +19,21 @@ const MyProfile = () => {
   const [isEdit, setIsEdit] = useState(false)
 
   return (
-    <div className='min-h-screen flex items-center justify-center'>
-      <div className='w-3/5 flex flex-col gap-2 text-sm '>
+    <div className='min-h-screen flex items-center justify-start sm:justify-center'>
+      <div className='w-full sm:w-2/5 flex flex-col gap-2 text-sm '>
 
         <img className='w-36 rounded' src={userData.image} alt="" />
 
         {
           isEdit
-            ? <input className='bg-gray-100 text-3xl font-medium max-w-80 mt-4 ' type="text" value={userData.name} onChange={e => setUserData(prev => ({ ...prev, name: e.target.value }))} />
+            ? <input className='bg-gray-100 text-3xl font-medium max-w-96 mt-4 ' type="text" value={userData.name} onChange={e => setUserData(prev => ({ ...prev, name: e.target.value }))} />
             : <p className='font-medium text-3xl text-neutral-800 mt-4'>{userData.name}</p>
         }
 
         <hr className='bg-zinc-400 h-[1px] border-none ' />
         <div>
           <p className='text-neutral-500 mt-3 text-base'>THÔNG TIN LIÊN HỆ</p>
-          <div className='grid grid-cols-[1fr_3fr] gap-y-2.5 mt-3 text-neutral-700'>
+          <div className='grid grid-cols-[0.8fr_3fr] gap-y-2.5 mt-3 text-neutral-700'>
             <p className='font-medium'>Email Id:</p>
             <p className='text-blue-500'>{userData.email}</p>
             <p className='font-medium'>Phone:</p>
@@ -60,7 +60,7 @@ const MyProfile = () => {
         </div>
         <div>
           <p className='text-neutral-500 mt-3 text-base'>THÔNG TIN CƠ BẢN</p>
-          <div className='grid grid-cols-[1fr_3fr] gap-y-2.5 mt-3 text-neutral-700'>
+          <div className='grid grid-cols-[0.8fr_3fr] gap-y-2.5 mt-3 text-neutral-700'>
             <p className='font-medium'>Giới tính:</p>
             {
               isEdit

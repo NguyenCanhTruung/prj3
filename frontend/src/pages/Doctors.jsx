@@ -8,6 +8,7 @@ const Doctors = () => {
 
   const {speciality}  = useParams()
   const [filterDoc, setFilterDoc] = useState([])
+  const [showFilter,setShowFilter] = useState(false)
   const navigate = useNavigate()
   
 
@@ -29,7 +30,8 @@ const Doctors = () => {
     <div>
       <p className='text-gray-600'>Duyệt qua các bác sĩ chuyên khoa.</p>
       <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
-        <div className='flex flex-col gap-4 text-sm text-gray-600'>
+        <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`} onClick={()=>setShowFilter(prev=> !prev)}>BỘ LỌC</button>
+        <div className={` flex-col gap-4 text-sm text-gray-600 ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
           <p onClick={()=> speciality === 'Bác sĩ đa khoa'? navigate('/doctors') : navigate('/doctors/Bác sĩ đa khoa')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-3 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Bác sĩ đa khoa" ? "bg-indigo-100 text-black" : ""}`}>Bác sĩ đa khoa</p>
           <p onClick={()=> speciality === 'bác sĩ phụ khoa'? navigate('/doctors') : navigate('/doctors/bác sĩ phụ khoa')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-3 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "bác sĩ phụ khoa" ? "bg-indigo-100 text-black" : ""}`}>bác sĩ phụ khoa</p>
           <p onClick={()=> speciality === 'Bác sĩ da liễu'? navigate('/doctors') : navigate('/doctors/Bác sĩ da liễu')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-3 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Bác sĩ da liễu" ? "bg-indigo-100 text-black" : ""}`}>Bác sĩ da liễu</p>

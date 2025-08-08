@@ -1,12 +1,12 @@
 import appointment_img from './appointment_img.png'
 import header_img from './header_img.png'
-import group_profiles from './group_profiles.png'
+// import group_profiles from './group_profiles.png'
 import profile_pic from './profile_pic.png'
 import contact_image from './contact_image.jpg'
 import about_image from './about_image.jpg'
 import logo from './logo.svg'
 import dropdown_icon from './dropdown_icon.svg'
-import menu_icon from './menu_icon.svg'
+import menu_icon from './menu_icon.png'
 import cross_icon from './cross_icon.png'
 import chats_icon from './chats_icon.svg'
 import verified_icon from './verified_icon.svg'
@@ -45,7 +45,7 @@ import Pediatricians from './Pediatricians.svg'
 export const assets = {
     appointment_img,
     header_img,
-    group_profiles,
+    // group_profiles,
     logo,
     chats_icon,
     verified_icon,
@@ -125,7 +125,7 @@ export const doctors = [
     },
     {
         _id: 'doc3',
-        name: 'Bs. Nguyễn Cảnh Trung',
+        name: 'Bs. Đào Thành Mạnh',
         image: bacsi3,
         speciality: 'Bác sĩ da liễu',
         degree: 'MBBS',
@@ -195,7 +195,7 @@ export const doctors = [
     },
     {
         _id: 'doc8',
-        name: 'Bs. Đào Thành Mạnh',
+        name: 'Bs. Nguyễn Quang Vinh',
         image: bacsi8,
         speciality: 'bác sĩ phụ khoa',
         degree: 'MBBS',
