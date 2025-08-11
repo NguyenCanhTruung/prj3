@@ -12,13 +12,13 @@ const Contact = () => {
       </div>
       <div className='my-10 flex flex-col justify-center md:flex-row gap-10 mb-28 text-sm'>
         <img className='w-full md:max-w-[360px] rounded' src={assets.contact_image} alt="" />
-        <div className='flex flex-col justify-center gap-6 items-start'>
+        <div className='flex flex-col justify-center gap-4 items-start'>
           <p className='font-semibold text-lg text-gray-600'>CÔNG TY CHÚNG TÔI</p>
           <p className='text-gray-500'>322E Lê Trọng Tấn, Phương Liệt, Hà Nội</p>
           <p className='text-gray-500'>Tel: +84 862-317-600 <br />Email: nguyentrung29042004@gmail.com</p>
           <p className='font-semibold text-lg text-gray-600'>Công việc tại CÔNG TY</p>
           <p className='text-gray-500'>Tìm hiểu thêm về các nhóm và vị trí tuyển dụng của chúng tôi</p>
-          <button className='block mx-auto md:mx-0 border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-300'>Khám phá</button>
+          <button className='block mx-auto md:mx-0 border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-300 rounded'>Khám phá</button>
         </div>
       </div>
     </div>

@@ -22,15 +22,15 @@ const About = () => {
       </div>
 
       <div className='flex flex-col md:flex-row mb-20'>
-        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[-15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
+        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[-15px] hover:bg-blue-500 hover:text-white transition-all duration-300 text-gray-600 cursor-pointer rounded-l-lg'>
           <b>Hiệu quả</b>
           <p>Lịch hẹn được sắp xếp hợp lý phù hợp với lối sống bận rộn của bạn.</p>
         </div>
-        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[-15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
+        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[-15px] hover:bg-blue-500 hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
           <b>Sự tiện lợi</b>
           <p>Tiếp cận mạng lưới các chuyên gia chăm sóc sức khỏe đáng tin cậy trong khu vực của bạn.</p>
         </div>
-        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[-15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
+        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[-15px] hover:bg-blue-500 hover:text-white transition-all duration-300 text-gray-600 cursor-pointer rounded-r-lg'>
           <b>Cá nhân hóa</b>
           <p>Những lời khuyên và lời nhắc nhở phù hợp giúp bạn luôn giữ gìn sức khỏe.</p>
         </div>

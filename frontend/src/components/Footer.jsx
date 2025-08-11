@@ -4,11 +4,11 @@ import { assets } from '../assets/assets'
 const Footer = () => {
   return (
     <div className='md:mx-10'>
-      <div className='felx flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm'>
+      <div className='felx flex-col sm:grid grid-cols-[2fr_1fr_1fr] gap-14 my-10 mt-40 text-sm'>
 
         {/* ----------------left--------------- */}
         <div>
-            <img className='mb-5 w-28' src={assets.logo2} alt="" />
+            <img className='mb-5 w-32' src={assets.logo2} alt="" />
             <p className='w-full md:w-4/5 text-gray-600 leading-6'>Website đặt lịch khám bệnh trực tuyến giúp bệnh nhân dễ dàng tìm kiếm, lựa chọn bác sĩ phù hợp và đặt lịch hẹn chỉ với vài thao tác. Hệ thống hỗ trợ quản lý lịch khám, nhắc lịch tự động, lưu trữ hồ sơ y tế an toàn và bảo mật, mang đến trải nghiệm khám chữa bệnh nhanh chóng, tiện lợi và hiệu quả.</p>
         </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
       {/* ------------copyright text------------- */}
       <div>
         <hr />
-        <p className='py-5 text-sm text-center'>Copyright © 2025 NGUYEN_CANH_TRUNG - All Right Reserved.</p>
+        <p className='py-2 text-sm text-center'>Copyright © 2025 NGUYEN_CANH_TRUNG - All Right Reserved.</p>
       </div>
     </div>
   )
