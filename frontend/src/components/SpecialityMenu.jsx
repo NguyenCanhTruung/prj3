@@ -1,10 +1,11 @@
 import React from 'react'
 import { specialityData } from '../assets/assets.js'
 import { Link } from 'react-router-dom'
+import "./Header.css"
 
 const SpecialityMenu = () => {
     return (
-        <div className='flex flex-col items-center gap-4 py-16 text-gray-800' id='speciality'>
+        <div className='flex flex-col items-center gap-4 py-16 text-gray-800 animate-fade-slide-up' id='speciality'>
             <h1 className='text-3xl font-medium'>Tìm theo chuyên ngành</h1>
             <p className='sm:w-1/3 text-center text-base'>Chỉ cần duyệt qua danh sách dài các bác sĩ đáng tin cậy của chúng tôi và đặt lịch hẹn mà không gặp rắc rối.
             </p>

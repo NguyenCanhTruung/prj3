@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
-
+import './Pages.css'
 
 const Doctors = () => {
 
@@ -31,7 +31,7 @@ const Doctors = () => {
       <p className='text-gray-600'>Duyệt qua các bác sĩ chuyên khoa.</p>
       <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
         <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`} onClick={()=>setShowFilter(prev=> !prev)}>BỘ LỌC</button>
-        <div className={` flex-col gap-4 text-sm text-gray-600 ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
+        <div className={` flex-col gap-4 text-sm text-gray-600 animate-fade-slide-up-2 ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
           <p onClick={()=> speciality === 'Bác sĩ đa khoa'? navigate('/doctors') : navigate('/doctors/Bác sĩ đa khoa')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-3 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Bác sĩ đa khoa" ? "bg-indigo-100 text-black" : ""}`}>Bác sĩ đa khoa</p>
           <p onClick={()=> speciality === 'bác sĩ phụ khoa'? navigate('/doctors') : navigate('/doctors/bác sĩ phụ khoa')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-3 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "bác sĩ phụ khoa" ? "bg-indigo-100 text-black" : ""}`}>bác sĩ phụ khoa</p>
           <p onClick={()=> speciality === 'Bác sĩ da liễu'? navigate('/doctors') : navigate('/doctors/Bác sĩ da liễu')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-3 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Bác sĩ da liễu" ? "bg-indigo-100 text-black" : ""}`}>Bác sĩ da liễu</p>
@@ -39,7 +39,7 @@ const Doctors = () => {
           <p onClick={()=> speciality === 'Nhà thần kinh học'? navigate('/doctors') : navigate('/doctors/Nhà thần kinh học')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-3 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Nhà thần kinh học" ? "bg-indigo-100 text-black" : ""}`}>Nhà thần kinh học</p>
           <p onClick={()=> speciality === 'Bác sĩ tiêu hóa'? navigate('/doctors') : navigate('/doctors/Bác sĩ tiêu hóa')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-3 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Bác sĩ tiêu hóa" ? "bg-indigo-100 text-black" : ""}`}>Bác sĩ tiêu hóa</p>
         </div>
-        <div className='w-full grid grid-cols-auto gap-4 gap-y-6'>
+        <div className='w-full grid grid-cols-auto gap-4 gap-y-6 animate-fade-slide-up'>
           {
             filterDoc.map((item,index)=>(
             // eslint-disable-next-line no-undef

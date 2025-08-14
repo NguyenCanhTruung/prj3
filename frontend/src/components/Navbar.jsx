@@ -36,7 +36,7 @@ const Navbar = () => {
           ?<div className='flex items-center gap-2 cursor-pointer group relative'>
             <img className='w-12 rounded-full ' src={assets.profile_pic} alt="" />
             <img className='w-2.5 ' src={assets.dropdown_icon} alt="" />
-            <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
+            <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-500 z-20 hidden group-hover:block'>
               <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
                 <p onClick={()=>navigate('my-profile')} className='hover:text-black cursor-pointer'>Hồ sơ cá nhân</p>
                 <p onClick={()=>navigate('my-appointments')} className='hover:text-black cursor-pointer'>Lịch hẹn cá nhân</p>
@@ -44,7 +44,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          :<button onClick={()=>navigate('/login')} className='bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block'>Create Account</button>
+          :<button onClick={()=>navigate('/login')} className='bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block'>Tạo tài khoản</button>
         }    
         <img onClick={()=>setShowMenu(true)} className='w-6 md:hidden' src={assets.menu_icon} alt="" />    
         {/* ----------mobile menu----------- */}

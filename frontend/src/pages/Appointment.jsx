@@ -85,7 +85,7 @@ const Appointment = () => {
       {/* ----------------Doctor details---------------------- */}
       <div className='flex flex-col sm:flex-row  gap-5 '>
         <div>
-          <img className='bg-blue-500 w-full sm:max-w-72 rounded-lg' src={docInfo.image} alt="" />
+          <img className='bg-secondary w-full sm:max-w-72 rounded-lg' src={docInfo.image} alt="" />
         </div>
 
         <div className='flex-1 border border-gray-400 rounded-lg p-5 bg-white mx-2 sm:mx-0 mt-[-80px] sm:mt-0'>
@@ -125,7 +125,7 @@ const Appointment = () => {
             </p>
           ))}
         </div>
-        <button className='bg-blue-500 text-white text-base font-light px-14 py-3 rounded-full my-6'>Đặt lịch hẹn</button>
+        <button className='bg-primary text-white text-base font-light px-14 py-3 rounded-full my-6'>Đặt lịch hẹn</button>
       </div>
 
           {/* ------Lissting Related doctors------- */}

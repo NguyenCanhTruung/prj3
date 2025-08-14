@@ -1,13 +1,14 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
+import "./Header.css"
 
 const TopDoctors = () => {
 
     const navigate = useNavigate()
     const {doctors} = useContext(AppContext)
   return (
-    <div className='flex flex-col items-center gap-4 my-16 text text-gray-900 md:mx-10'>
+    <div className='flex flex-col items-center gap-4 my-16 text text-gray-900 md:mx-10 animate-fade-slide-up'>
       <h1 className='text-3xl font-medium'>Những Bác sĩ được đặt lịch nhiều</h1>
       <p className='sm:w-1/3 text-center text-base'>Danh sách có những người bác sĩ giỏi nhất trong chuyên môn của họ</p>
       <div className='w-full grid grid-cols-auto gap-4 pt-5 gap-y-6 px-3 sm:px-0'>
@@ -24,7 +25,7 @@ const TopDoctors = () => {
             </div>
         ))}
       </div>
-      <button onClick={()=>{navigate('/doctors'); scrollTo(0,0)}} className='bg-blue-50 text-gray-600 px-12 py-3 rounded-full mt-10'>Nhiều Hơn</button>
+      <button onClick={()=>{navigate('/doctors'); scrollTo(0,0)}} className='bg-blue-50 text-gray-600 px-12 py-3 rounded-full mt-10  hover:bg-primary hover:text-white transition-all duration-250'>Nhiều Hơn</button>
     </div>
   )
 }

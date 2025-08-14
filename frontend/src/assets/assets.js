@@ -105,8 +105,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 500,
         address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -119,8 +119,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 600,
         address: {
-            line1: '27th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -133,8 +133,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 300,
         address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -147,8 +147,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 400,
         address: {
-            line1: '47th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -161,8 +161,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 500,
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -175,8 +175,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 500,
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -189,8 +189,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 500,
         address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -203,8 +203,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 600,
         address: {
-            line1: '27th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -217,8 +217,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 300,
         address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -231,8 +231,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 400,
         address: {
-            line1: '47th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -245,8 +245,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 500,
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -259,8 +259,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 500,
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -273,8 +273,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 500,
         address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -287,8 +287,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 600,
         address: {
-            line1: '27th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
     {
@@ -301,8 +301,8 @@ export const doctors = [
         about: 'Bác sĩ cam kết một cách mạnh mẽ và lâu dài trong việc cung cấp dịch vụ chăm sóc y tế toàn diện cho người bệnh. Cam kết này không chỉ thể hiện qua việc điều trị các bệnh lý hiện tại, mà còn nhấn mạnh đến vai trò quan trọng của y học dự phòng nhằm hạn chế nguy cơ mắc bệnh trong tương lai. Đồng thời, bác sĩ chú trọng đến việc chẩn đoán sớm để phát hiện kịp thời các vấn đề sức khỏe ngay từ giai đoạn đầu, từ đó xây dựng và triển khai các chiến lược điều trị hiệu quả, cá nhân hóa theo tình trạng và nhu cầu của từng bệnh nhân, nhằm nâng cao chất lượng cuộc sống và sức khỏe bền vững cho cộng đồng.',
         fees: 300,
         address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Số 78, Giải Phóng',
+            line2: 'Phương Đình, Đống Đa, Hà Nội'
         }
     },
 ]
