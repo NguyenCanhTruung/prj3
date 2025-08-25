@@ -14,17 +14,17 @@ const addDoctor = async (req, res) => {
 
         // checking ffor all data to add doctor
         if (!name||!email||!password||!speciality||!degree||!experience||!about||!fees||!address) {
-            return res.json({success:false, message: "Missing Details" });
+            return res.json({success:false, message: "Thiếu chi tiết" });
         }
 
         // validating email format
         if (!validator.isEmail(email)) {
-            return res.json({success:false, message: "Please enter a valid email" });            
+            return res.json({success:false, message: "Vui lòng nhập email hợp lệ" });            
         }
 
         // validating strong password
         if (password.length < 8 ) {
-            return res.json({success:false, message: "Please enter a strong password" });
+            return res.json({success:false, message: "Vui lòng nhập mật khẩu mạnh hơn" });
 
         }
 
@@ -53,7 +53,7 @@ const addDoctor = async (req, res) => {
         const newDoctor = new doctorModel(doctorData);
         await newDoctor.save();
 
-        res.json({success:true, message: "Doctor added successfully"});
+        res.json({success:true, message: "Bác sĩ đã được thêm thành công"});
 
     } catch (error) {
         console.log(error);
@@ -72,7 +72,7 @@ const loginAdmin = async (req, res) => {
             const token = JWT.sign(email+password, process.env.JWT_SECRET);
             res.json({success:true,token})
         } else{
-            res.json({success:false, message:"invalid credentials"});
+            res.json({success:false, message:"Email hoặc mật khẩu không đúng"});
         }
         
     } catch (error) {
@@ -81,4 +81,15 @@ const loginAdmin = async (req, res) => {
     }
 }
 
-export { addDoctor, loginAdmin };
+// api get all doctors for admin
+const allDoctors = async (req, res) => {
+    try {
+        const doctors = await doctorModel.find({}).select('-password')
+        res.json({success:true, doctors})
+    } catch (error) {
+        console.log(error);
+        res.json({success:false,message:error.message})
+    }
+}
+
+export { addDoctor, loginAdmin, allDoctors };

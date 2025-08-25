@@ -10,6 +10,6 @@
 }
 
 .animate-fade-slide-up {
-  animation: fadeSlideUp 1s ease-out forwards;
+  animation: fadeSlideUp 0.8s ease-out forwards;
   opacity: 0;
 }
