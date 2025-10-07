@@ -47,26 +47,38 @@ const registerUser = async (req, res) => {
 //api for user login
 const loginUser = async (req, res) => {
   try {
-
     const { email, password } = req.body;
     const user = await userModel.findOne({ email });
 
     if (!user) {
-       return res.json({ success: false, message: 'Người dùng không tồn tại' });
+      return res.json({ success: false, message: "Người dùng không tồn tại" });
     }
 
-    const isMatch = await bycrypt.compare(password, user.password); 
+    const isMatch = await bycrypt.compare(password, user.password);
 
     if (isMatch) {
-        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
-        res.json({ success: true, token });
+      const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
+      res.json({ success: true, token });
     } else {
-        res.json({ success: false, message: 'Thông tin không hợp lệ' });
+      res.json({ success: false, message: "Thông tin không hợp lệ" });
     }
-
   } catch (error) {
     console.log(error);
     res.json({ success: false, message: error.message });
   }
 };
-export { registerUser, loginUser };
+
+// api to get user profile data
+const getProfile = async (req, res) => {
+  try {
+    const userId  = req.userId ;
+    const userData = await userModel.findById(userId).select("-password");
+
+    res.json({ success: true, userData });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
+
+export { registerUser, loginUser, getProfile };
