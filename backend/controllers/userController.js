@@ -87,7 +87,7 @@ const getProfile = async (req, res) => {
 // api to update user profile
 const updateProfile = async (req, res) => {
   try {
-    const userId = req.body.userId || req.userId;
+    const userId = req.userId || req.body.userId;
     const { name, phone, address, dob, gender } = req.body;
     const imageFile = req.file;
 
