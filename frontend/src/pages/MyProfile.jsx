@@ -1,12 +1,12 @@
 import React, { useContext, useState } from 'react'
 import { AppContext } from '../context/AppContext'
-import {assets} from '../assets/assets'
+import { assets } from '../assets/assets'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 
 const MyProfile = () => {
 
-  const {userData, setUserData, token, backendUrl, loadUserProfileData} = useContext(AppContext)
+  const { userData, setUserData, token, backendUrl, loadUserProfileData } = useContext(AppContext)
 
   const [isEdit, setIsEdit] = useState(false)
   const [image, setImage] = useState(false)
@@ -14,7 +14,7 @@ const MyProfile = () => {
   const updateUserProfileData = async () => {
 
     try {
-      
+
       const formData = new FormData()
 
       formData.append('name', userData.name)
@@ -25,8 +25,8 @@ const MyProfile = () => {
 
       image && formData.append('image', image)
 
-      const {data} = await axios.post(backendUrl + '/api/user/update-profile', formData, {headers:{token}})
-
+      const { data } = await axios.post(backendUrl + '/api/user/update-profile', formData, { headers: { token } })
+      
       if (data.success) {
         toast.success(data.message)
         await loadUserProfileData()
@@ -35,32 +35,28 @@ const MyProfile = () => {
       } else {
         toast.error(data.message)
       }
-
     } catch (error) {
       console.log(error)
       toast.error(error.message);
-      
-    }
 
+    }
   }
 
-  return userData &&  (
+  return userData && (
     <div className='min-h-screen flex items-center justify-start sm:justify-center'>
       <div className='w-full sm:w-2/5 flex flex-col gap-2 text-sm '>
 
-      {
-        isEdit
-        ? <label htmlFor="image">
-          <div className='inline-block cursor-pointer relative '>
-            <img className='w-36 rounded opacity-75' src={image ? URL.createObjectURL(image) : userData.image} alt="" />
-            <img className='w-10 absolute bottom-12 right-12' src={image ? '' : assets.upload_icon} alt="" />
-          </div>
-          <input onChange={(e)=>setImage(e.target.files[0])} type="file" id="image" hidden/>
-        </label>
-        : <img className='w-36 rounded' src={userData.image} alt="" />
-      }
-
-        
+        {
+          isEdit
+            ? <label htmlFor="image">
+              <div className='inline-block cursor-pointer relative '>
+                <img className='w-36 rounded opacity-75' src={image ? URL.createObjectURL(image) : userData.image} alt="" />
+                <img className='w-10 absolute bottom-12 right-12' src={image ? '' : assets.upload_icon} alt="" />
+              </div>
+              <input onChange={(e) => setImage(e.target.files[0])} type="file" id="image" hidden />
+            </label>
+            : <img className='w-36 rounded' src={userData.image} alt="" />
+        }
 
         {
           isEdit
