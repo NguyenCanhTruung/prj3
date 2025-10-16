@@ -178,7 +178,47 @@ const bookAppointment = async (req, res) => {
     console.log(error);
     res.json({ success: false, message: error.message });
   }
+}
+
+//api to get user appointments for frontend my-appointment page
+const listAppointment = async(req, res) =>{
+
+  try {
+
+    const userId = req.userId;
+    const appointments = await appointmentModel.find({userId})
+
+    res.json({success:true, appointments})
+    
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
 
 }
 
-export { registerUser, loginUser, getProfile, updateProfile, bookAppointment };
+//api to cancel appointment
+const cancelAppointment = async(req, res) =>{
+
+  try {
+
+    const {userId, appointmentId} = req.body;
+
+    const appointmentData = await appointmentModel.findById(appointmentId)
+
+    // verify appointment belongs to user
+    if (appointmentData.userId !== userId) {
+      return res.json({success:false, message:"Bạn không có quyền hủy cuộc hẹn này"})
+    }
+
+    await appointmentModel.findByIdAndUpdate(appointmentId, {cancelled: true})
+    
+    
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+
+}
+
+export { registerUser, loginUser, getProfile, updateProfile, bookAppointment, listAppointment };

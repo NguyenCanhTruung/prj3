@@ -10,14 +10,13 @@ import axios from 'axios'
 const Appointment = () => {
 
   const { docId } = useParams()
-  const { doctors, currencySymbol, backendUrl, token, getDoctorsData } = useContext(AppContext)
+  const { doctors, currencySymbol, backendUrl, token, getDoctorsData, userData } = useContext(AppContext)
   const dayOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
 
   const navigate = useNavigate()
 
   const [docInfo, setDocInfo] = useState(null)
   const [docSlots, setDocSlots] = useState([])
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const [slotIndex, setSlotIndex] = useState(0)
   const [slotTime, setSlotTime] = useState('')
 
@@ -55,11 +54,24 @@ const Appointment = () => {
       while (currentDate < endTime) {
         let formattedTime = currentDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
 
-        // add slot to array
-        timeSlots.push({
+        let day = currentDate.getDate()
+        let month = currentDate.getMonth() + 1
+        let year = currentDate.getFullYear()
+
+        const slotDate = day + "_" + month + "_" + year
+        const slotTime = formattedTime
+
+        const isSlotAvailable = docInfo.slots_booked[slotDate] && docInfo.slots_booked[slotDate].includes(slotTime) ? false : true
+
+        if (isSlotAvailable) {
+          timeSlots.push({
           datetime: new Date(currentDate),
           time: formattedTime
-        })
+          })
+        }
+
+        // add slot to array
+        
 
         // Incrementing time by 30 minutes
         currentDate.setMinutes(currentDate.getMinutes() + 30)
@@ -87,7 +99,13 @@ const Appointment = () => {
 
       const slotDate = day + "_" + month + "_" + year
 
-      const { data } = await axios.post(backendUrl + '/api/user/book-appointment', { docId, slotDate, slotTime }, { headers: { token } })
+      if (!userData || !userData._id) {
+        toast.warn("Vui lòng đăng nhập để đặt lịch hẹn")
+        return navigate('/login')
+      }
+
+      const payload = { docId, slotDate, slotTime, userId: userData._id, userData }
+      const { data } = await axios.post(backendUrl + '/api/user/book-appointment', payload, { headers: { token } })
       if (data.success) {
         toast.success(data.message)
         getDoctorsData()
