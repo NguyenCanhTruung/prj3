@@ -198,27 +198,44 @@ const listAppointment = async(req, res) =>{
 }
 
 //api to cancel appointment
-const cancelAppointment = async(req, res) =>{
-
+const cancelAppointment = async (req, res) => {
   try {
+    const userId = req.userId || req.body.userId;
+    const { appointmentId } = req.body;
 
-    const {userId, appointmentId} = req.body;
+    if (!userId) return res.json({ success: false, message: "Thiếu userId" });
+    if (!appointmentId) return res.json({ success: false, message: "Thiếu appointmentId" });
 
-    const appointmentData = await appointmentModel.findById(appointmentId)
+    const appointmentData = await appointmentModel.findById(appointmentId);
+    if (!appointmentData) return res.json({ success: false, message: "Không tìm thấy cuộc hẹn" });
 
-    // verify appointment belongs to user
-    if (appointmentData.userId !== userId) {
-      return res.json({success:false, message:"Bạn không có quyền hủy cuộc hẹn này"})
+    // verify appointment belongs to user (compare strings)
+    if (appointmentData.userId.toString() !== userId.toString()) {
+      return res.json({ success: false, message: "Bạn không có quyền hủy cuộc hẹn này" });
     }
 
-    await appointmentModel.findByIdAndUpdate(appointmentId, {cancelled: true})
-    
-    
+    await appointmentModel.findByIdAndUpdate(appointmentId, { cancelled: true });
+
+    // releasing doctor slot
+    const { docId, slotDate, slotTime } = appointmentData;
+    const doctorData = await doctorModel.findById(docId);
+    if (doctorData) {
+      let slots_booked = doctorData.slots_booked || {};
+      if (typeof slots_booked.toObject === "function") slots_booked = slots_booked.toObject();
+
+      if (Array.isArray(slots_booked[slotDate])) {
+        slots_booked[slotDate] = slots_booked[slotDate].filter((e) => e !== slotTime);
+        if (slots_booked[slotDate].length === 0) delete slots_booked[slotDate];
+      }
+
+      await doctorModel.findByIdAndUpdate(docId, { slots_booked }, { new: true });
+    }
+
+    res.json({ success: true, message: "Hủy cuộc hẹn thành công" });
   } catch (error) {
     console.log(error);
     res.json({ success: false, message: error.message });
   }
-
 }
 
-export { registerUser, loginUser, getProfile, updateProfile, bookAppointment, listAppointment };
+export { registerUser, loginUser, getProfile, updateProfile, bookAppointment, listAppointment, cancelAppointment };
