@@ -12,6 +12,8 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import VnpayCallback from './pages/VnpayCallback.jsx';
+
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[6%]'>
@@ -27,6 +29,7 @@ const App = () => {
         <Route path='/my-profile' element={<MyProfile />} />
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/appointment/:docId' element={<Appointment />} />
+        <Route path="/vnpay-callback" element={<VnpayCallback />} />
       </Routes>
       <Footer />
     </div>
