@@ -19,7 +19,7 @@ export const createPaymentUrl = async (req, res) => {
     const txnRef = `ORDER_${appointmentId}_${Date.now()}`;
     appointment.txnRef = txnRef;
     await appointment.save();
-    // Số tiền nhân 100 theo chuẩn VNPay (giả sử field fees hoặc amount là số tiền VND thực tế)
+    // Số tiền nhân 1000 theo chuẩn VNPay (giả sử field fees hoặc amount là số tiền VND thực tế)
     const vnpAmount = appointment.amount * 1000;
     const paymentUrl = vnpay.buildPaymentUrl({
       vnp_Amount: vnpAmount,
